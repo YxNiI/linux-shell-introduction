@@ -1,0 +1,29 @@
+/***********
+ * general *
+ ***********/
+*, *::before, *::after
+{
+    /****************
+     * color-config *
+     ****************/
+    --dark-brown: #73260f;
+    --light-brown: #a16752;
+    --ocher: #cfbcb4;
+    --skin: #ffe9d9;
+
+    /********************
+     * container-config *
+     ********************/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /***************
+     * font-config *
+     ***************/
+    --16px: 1rem;
+    --24px: 1.5rem;
+    --32px: 2rem;
+    --300px: 18.75rem;
+    font-family: "Press Start 2P", "VT323", monospace;
+}
