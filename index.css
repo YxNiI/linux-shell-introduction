@@ -7,7 +7,9 @@
      * color-config *
      ****************/
     --first-color: #ffe7f4;
-    --second-color: #f7e7ff;
+    --second-color: #c3a2cb;
+    --third-color: #796f9d;
+    --fourth-color: #41566e;
 
     /********************
      * container-config *
@@ -26,17 +28,29 @@
     font-family: "Press Start 2P", "VT323", monospace;
 }
 
+/**************
+ * containers *
+ **************/
 body
 {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
+}
 
-    background-image: url("img/scanlines.png"), url("img/screen_borders.png");
-    background-size: cover, cover;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
+body::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background: white repeating-linear-gradient(to bottom, black 1px, white 4px);
+    opacity: 15%;
 }
 
 main
@@ -52,16 +66,26 @@ main
 /*********
  * texts *
  *********/
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--fourth-color);
+    text-shadow: 0 0 1em var(--third-color);
+}
+
+ol, ul
 {
     padding-left: 30px;
 }
 
 p, li
 {
-    color: white;
+    color: var(--third-color);
 }
 
-h1, h2, h3, h4, h5, h6
+p::before
 {
-    color: var(--first-color);
+    content: "yxnill@codejam:~$ ";
+    font-weight: bold;
+    color: var(--third-color);
+    text-shadow: 0 0 1em var(--second-color);
 }
