@@ -46,8 +46,8 @@ body
 
     border-style: solid;
     border-color: black;
-    border-left-width: 70px;
-    border-right-width: 70px;
+    border-left-width: 10vh;
+    border-right-width: 10vh;
 }
 
 body::before
@@ -100,6 +100,7 @@ h3, h4, h5, h6
 h1
 {
     text-align: center;
+    margin: 5px 0 5px 0;
 }
 
 h2
