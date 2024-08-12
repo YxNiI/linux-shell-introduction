@@ -125,3 +125,14 @@ p::before
     color: var(--third-color);
     text-shadow: 0 0 1em var(--second-color);
 }
+
+/**********
+ * images *
+ **********/
+img
+{
+    padding: 5px;
+    margin: 3px;
+    border-style: dashed;
+    border-color: var(--second-color);
+}
