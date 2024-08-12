@@ -27,3 +27,26 @@
     --300px: 18.75rem;
     font-family: "Press Start 2P", "VT323", monospace;
 }
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+    background-image: url("img/scanlines.png"), url("img/bezel.png");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+main
+{
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
