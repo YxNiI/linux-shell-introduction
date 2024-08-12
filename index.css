@@ -6,10 +6,8 @@
     /****************
      * color-config *
      ****************/
-    --dark-brown: #73260f;
-    --light-brown: #a16752;
-    --ocher: #cfbcb4;
-    --skin: #ffe9d9;
+    --first-color: #ffe7f4;
+    --second-color: #f7e7ff;
 
     /********************
      * container-config *
@@ -35,7 +33,7 @@ body
     overflow: hidden;
     position: relative;
 
-    background-image: url("img/scanlines.png"), url("img/bezel.png");
+    background-image: url("img/scanlines.png"), url("img/screen_borders.png");
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
@@ -45,8 +43,25 @@ main
 {
     overflow-y: auto;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 1%;
+    left: 10%;
+    right: 10%;
     bottom: 0;
+}
+
+/*********
+ * texts *
+ *********/
+{
+    padding-left: 30px;
+}
+
+p, li
+{
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--first-color);
 }
