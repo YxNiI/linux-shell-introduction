@@ -28,6 +28,12 @@
     font-family: "Press Start 2P", "VT323", monospace;
 }
 
+::selection
+{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+
 /**************
  * containers *
  **************/
@@ -37,6 +43,11 @@ body
     width: 100vw;
     overflow: hidden;
     position: relative;
+
+    border-style: solid;
+    border-color: black;
+    border-left-width: 70px;
+    border-right-width: 70px;
 }
 
 body::before
@@ -57,10 +68,19 @@ main
 {
     overflow-y: auto;
     position: absolute;
-    top: 1%;
+    top: 0;
     left: 10%;
     right: 10%;
     bottom: 0;
+}
+
+.chapter
+{
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 20px;
+    border-style: dashed;
+    border-color: var(--third-color);
+
 }
 
 /*********
@@ -70,6 +90,21 @@ h1, h2, h3, h4, h5, h6
 {
     color: var(--fourth-color);
     text-shadow: 0 0 1em var(--third-color);
+}
+
+h3, h4, h5, h6
+{
+    margin-top: 5px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h2
+{
+    margin-bottom: 5px;
 }
 
 ol, ul
