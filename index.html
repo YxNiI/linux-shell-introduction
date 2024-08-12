@@ -22,7 +22,7 @@
         </ol>
         <p>Hardware and kernel can only be accessed through the interface of the shell.</p>
         <p>And as shown through the seventh list-element, the shell can either be accessed through a cli
-            (command-line-interface), or a gui (graphical user-interface)</p>
+            (command-line-interface), or a gui (graphical user-interface).</p>
         <p>The "gnu/linux"-os can be configured to boot into a cli, but it is more common to boot into a gui and then
             use a terminal-emulator-application in order to access the cli-shell; this is also the way shown in
             this introduction.</p>
@@ -45,10 +45,13 @@
         <h2>Navigating the Linux-Shell</h2>
         <p>Before every command which can be typed in at the position of the caret, is a prefix in the following format:
             "[user]@[computer-name]".</p>
+        <p>This is so, because it is possible to change the logged-in user inside the terminal-emulator, while the same
+            user remains logged in, in the gui of the desktop-environment; it is also possible to access other machines
+            via tools like: "ssh" and therefore the computer-name would change according to that.</p>
         <h3>Basic Commands</h3>
         <p>The following commands are the most elemental commands which are needed to explore and learn the
             linux-shell.</p>
-        <p>For the start they are all which are really needed for basic exploration and learning, and they are also
+        <p>For the start, they are all which are really needed for basic exploration and learning, and they are also
             going to serve as examples for further explanations.</p>
         <h4>ls</h4>
         <p>"ls" stands for: "list".</p>
@@ -63,21 +66,25 @@
         <p>It is used in the following way: "pwd"</p>
         <p>It prints the absolute path (the path from the root-directory to the current working directory), into
             the console.</p>
-        <p>This command may be used to navigate the directory-hierarchy, by being able to know where your current
+        <p>This command may be used to navigate the directory-hierarchy, by being able to know where the current
             working directory is positioned.</p>
         <h4>cd</h4>
         <p>"cd" stands for: "change directory".</p>
-        <p>It is used in the following way: "cd [dirname]</p>
+        <p>It is used in the following way: "cd [dirname].</p>
         <p>So typing: "ls", is going to list all the non-hidden directories and then these can be traversed by using:
             "cd [dirname]".</p>
         <p>(Typing: "cd .." results in going back in the directory-hierarchy.)</p>
+        <p>(A single dot represents the current working directory.)</p>
+        <p>(Tilde represents the home-directory: "cd ~".)</p>
         <p>Therefore, it can be used to do the actual navigating.</p>
+        <p>Multiple directories can be traversed at once in the following way: "cd ./[dirname]/[dirname]".</p>
         <h2>Getting Help</h2>
         <p>While exploring the shell, it is more important to know how to gather unknown information about the shell,
             than knowing how to use the shell 100% of the time.</p>
         <p>What this means is, it is important to know how to use the shell's help-system and external sources, like
             web-searches.</p>
-        <p>It would be wrong to think memorizing all the commands and remember them at all time is how to use the shell,
+        <p>It would be wrong to think memorizing all the commands and remembering them at all time is how to use the
+            shell,
             this is not how it works.</p>
         <h3>-h and --help</h3>
         <p>Nearly every shell-command has a so called: "option", called: "-h" and/or: "--help".</p>
@@ -87,7 +94,7 @@
             command, like described above with the help-option.)</p>
         <h3>man</h3>
         <p>"man" unlike: "-h" and "--help" is its own command and takes a name of another command as an argument (like
-            "cd" takes a directory-name as an argument), in order to display a detailed man-page</p>
+            "cd" takes a directory-name as an argument), in order to display a detailed man-page.</p>
         <p>This man-page is displayed in a separate terminal-view and allows scrolling through it with the
             arrow-keys.</p>
         <p>This view can be left by pressing the: "q"-key.</p>
@@ -112,8 +119,8 @@
             <li>Knowledge of the linux-shell's help-system and what options are.</li>
         </ol>
         <p>These basics are going to give a good elemental understanding to build on, because information on how to
-            navigate the shell, and about how to use it's help-system, if a new functionality needs to be figured
-            out has now been conveyed.</p>
+            navigate the shell, and about how to use it's help-system (if a new functionality needs to be figured
+            out) has now been conveyed.</p>
         <p>Lastly, here are some suggestions for further reading, about topics which are going to build on the
             information just conveyed here:</p>
         <ul>
@@ -122,6 +129,8 @@
                 "nano"-console-text-editor, with the package-manager.
             </li>
             <li>Read about what "sh" and "bash" is and why both are different kinds of shells, which can be used.</li>
+            <li>Read about how the "tab"-key interacts with the terminal and how it can make its usage it much faster.
+            </li>
         </ul>
     </body>
 </html>
