@@ -10,24 +10,26 @@
     <body>
         <h1>Linux-Shell-Introduction</h1>
         <h2>What is the Linux-Shell?</h2>
-        <p>The linux-shell is a component of the "gnu/linux"-operating-system, which is the interface of the os.</p>
+        <p>The linux-shell is a component of the "gnu/linux"-os (operating-system), which is the outermost part of the
+            os and could therefore be called the: "interface" of the os.</p>
         <p>"gnu/linux" is normally composed of the following parts:</p>
         <ol>
             <li>Hardware</li>
             <li>Kernel</li>
-            <li>Operating-System</li>
             <li>Shell</li>
             <li>CLI/GUI</li>
             <li>Applications</li>
         </ol>
-        <p>As shown through the seventh list-element, the shell can either be accessed through a cli
+        <p>Hardware and kernel can only be accessed through the interface of the shell.</p>
+        <p>And as shown through the seventh list-element, the shell can either be accessed through a cli
             (command-line-interface), or a gui (graphical user-interface)</p>
-        <p>One can configure the "gnu/linux"-os to boot into a cli, but it is more common to boot into a gui and
-            then use a terminal-emulator-application in order to access the shell via a cli.</p>
-        <p>This website is going to focus on an introduction to using the linux-shell via the cli.</p>
+        <p>One can configure the "gnu/linux"-os to boot into a cli, but it is more common to boot into a gui and then
+            use a terminal-emulator-application in order to access the cli-shell; this is also the way shown in
+            this introduction.</p>
         <h2>Accessing the Linux-Shell.</h2>
         <p>This introduction focuses on beginners and therefore is going to assume that it's reader is using a standard
-            "gnu/linux"-desktop-environment, which ships with a terminal-emulator already installed (like GNOME).</p>
+            "gnu/linux"-desktop-environment, which ships with a terminal-emulator already installed (like GNOME on
+            Ubuntu).</p>
         <h3>Using the System-Search</h3>
         <p>In order to open a terminal-emulator via the system-search-tool, press the: "Meta"-key (colloquial often
             called
@@ -38,36 +40,42 @@
         <h3>Using the Start-/Applications-menu</h3>
         <p>Open the start-/applications-menu through the designated button in your task-bar.</p>
         <p>Search for a program with: "terminal" in its name and open it.</p>
+        <p>(If your desktop-environment uses preconfigured folders in the start-/applications-menu, search in the:
+            "tools"-, or "accessorizes"-folder.)</p>
         <h2>Navigating the Linux-Shell</h2>
         <p>Before every command you type in at the position of the caret, is a prefix in the following format:
             "[user]@[computer-name]".</p>
-        <p>Otherwise, the shell now gives one the freedom to type in whatever one would want, but of course, without
-            typing in registered commands, it isn't going to do anything.</p>
         <h3>Basic Commands</h3>
         <p>The following commands are the most elemental commands which are needed to explore and learn the
             linux-shell.</p>
-        <p>For the start they are all you really need and they are also going to serve as examples for further
+        <p>For the start they are all you really need, and they are also going to serve as examples for further
             explanations.</p>
         <h4>ls</h4>
         <p>"ls" stands for: "list".</p>
         <p>It is used in the following way: "ls".</p>
-        <p>In other words, you can just type it in, press return, and it is going to list all non-hidden files and
-            folder in the directory you are currently in.</p>
+        <p>In other words, you can just type it in the command-line, press return, and it is going to list all
+            non-hidden files and folders in the current working-directory (the directory your cli is focused on right
+            now).</p>
+        <p>You can use this command in order to see where you can go in the directory-hierarchy and which files are
+            available to you.</p>
         <h4>pwd</h4>
         <p>"pwd" stands for: "print working directory".</p>
         <p>It is used in the following way: "pwd"</p>
         <p>It prints the absolute path (the path from your root-directory to the directory you are currently in), into
             the console.</p>
+        <p>This command may be used to navigate the directory-hierarchy, by being able to know where your current
+            working-directory is positioned.</p>
         <h4>cd</h4>
         <p>"cd" stands for: "change directory".</p>
         <p>It is used in the following way: "cd [dirname]</p>
         <p>So if you type: "ls", you are going to see all directories you can change in and then using: "cd [dirname],
             you can change your working directory to it.</p>
+        <p>Therefore, it can be used to do the actual navigating.</p>
         <h2>Getting Help</h2>
         <p>While exploring the shell, it is more important to know how to gather unknown information about the shell,
             than knowing how to use the shell 100% of the time.</p>
-        <p>What this means is, it is important to know how to use the shell's help and man functionality and external
-            sources, like web-searches.</p>
+        <p>What this means is, it is important to know how to use the shell's help-system and external sources, like
+            web-searches.</p>
         <p>Don't think you have to learn all the commands and remember them at all time, this is not how it works.</p>
         <h3>-h and --help</h3>
         <p>Nearly every shell-command has a so called: "option", called: "-h" and/or: "--help".</p>
@@ -77,8 +85,9 @@
             command, like described above with the help-option.)</p>
         <h3>man</h3>
         <p>"man" unlike: "-h" and "--help" is its own command and takes a name of another command as an argument (like
-            "cd" takes a directory-name), in order to display a detailed man-page</p>
-        <p>This man-page is displayed in a separate terminal-view and lets you scroll through it with the arrow-keys</p>
+            "cd" takes a directory-name as an argument), in order to display a detailed man-page</p>
+        <p>This man-page is displayed in a separate terminal-view and lets you scroll through it with the
+            arrow-keys.</p>
         <p>You can leave this view by pressing the: "q"-key.</p>
         <p>You can enter search-queries by typing: "/", typing in the word you want to search for and then pressing
             return.</p>
@@ -86,25 +95,29 @@
         <p>As already mentioned above, there is absolutely no shame in using web-searches if you don't know a command,
             or even if you can't completely decipher the: "--help"- or man-page-printouts of a command you do know.</p>
         <p>Even people who use the linux-shell a lot don't know all commands and/or all their options.</p>
-        <p>So if, after this introduction, you would want to know how to creat a file; you could search the following in
-            your search-engine of trust: "linux shell create file".</p>
+        <p>So if, after this introduction, you would want to know how to creat a file, or a directory; you could search
+            the following in
+            your search-engine of trust: "linux shell create file" or "linux shell create directory".</p>
         <p>Which would then lead you to websites which are probably going to show you that the: "touch"-command is going
-            to do the trick here.</p>
+            to do the trick here for files and the "mkdir"-command for directories.</p>
         <h2>Conclusion</h2>
         <p>You are know equipped with the following:</p>
         <ol>
             <li>Basic knowledge about the linux-shell.</li>
             <li>Knowledge of how to access the linux-shell.</li>
-            <li>Knowledge of the most elemental commands.</li>
+            <li>Knowledge of the most elemental commands to navigate the shell.</li>
             <li>Knowledge of the linux-shell's help-system and what options are.</li>
         </ol>
-        <p>These basics are going to give you a good elemental understanding to build on.</p>
+        <p>These basics are going to give you a good elemental understanding to build on, because you now know how to
+            navigate the shell, and you know how to use it's help-system if you want to figure out how to do
+            something.</p>
         <p>Lastly, here are some tips of what you could read about after this introduction:</p>
         <ul>
             <li>Read about and try out the "nano"-console-text-editor.</li>
             <li>Read about what a package-manager is and if you don't have it installed yet, install the
                 "nano"-console-text-editor, with your package-manager.
             </li>
+            <li>Read about what "sh" and "bash" is and why both are different kinds of shells you can use.</li>
         </ul>
     </body>
 </html>
