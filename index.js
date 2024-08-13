@@ -7,7 +7,7 @@ document.querySelector("main").addEventListener("scroll", function()
                                                  const viewportCenter = window.innerHeight / 2;
 
                                                  if ((caretRectCenter >= viewportCenter - 200 && caretRectCenter
-                                                      <= viewportCenter))
+                                                      <= viewportCenter + 50))
                                                  {
                                                      caret.classList.add("animate");
                                                  }
