@@ -1,3 +1,5 @@
+// The carets inside the "pre"-elements, which are inside the "main"-element,
+// start blinking when they are in the middle of the viewport.
 document.querySelector("main").addEventListener("scroll", function()
 {
     document.querySelectorAll("pre").forEach(function(caret)
