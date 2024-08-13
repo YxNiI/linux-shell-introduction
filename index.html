@@ -199,19 +199,46 @@
                 <p>In the example above, all options are also combined, so they are written as: <kbd>-hla</kbd>, which
                     is a common technique for the shorthand versions of any option (although not every option provides
                     this usage, as some options require for example: arguments of their own.)</p>
-                <p>The longhand options don't provide this technique, but are a bit more readable, they are also listed in the <kbd>--help</kbd>-printouts.</p>
+                <p>The longhand options don't provide this technique, but are a bit more readable, they are also listed
+                    in the <kbd>--help</kbd>-printouts.</p>
                 <p>For example: the longhand for the <kbd>-a</kbd>-option is: <kbd>--all</kbd>.</p>
                 <h3>man</h3>
-                <p>"man" unlike: "-h" and "--help" is its own command and takes a name of another command as an argument
-                    (like
-                    "cd" takes a directory-name as an argument), in order to display a detailed man-page.</p>
+                <p><kbd>man</kbd> unlike: <kbd>-h</kbd> and <kbd>--help</kbd> is its own command and takes a name of
+                    another command as an argument
+                    (like <kbd>cd</kbd> takes a directory-name as an argument), in order to display a detailed man-page.
+                </p>
                 <p>This man-page is displayed in a separate terminal-view and allows scrolling through it with the
                     arrow-keys.</p>
-                <p>This view can be left by pressing the: "q"-key.</p>
-                <p>Search-queries can be entered by typing: "/", then typing in the word information is needed for and
-                    lastly
-                    pressing
-                    return.</p>
+                <p>This view can be left by pressing the: <kbd>q</kbd>-key.</p>
+                <p>Search-queries can be entered by typing: <kbd>/</kbd>, then typing in the word information is needed
+                    for and lastly pressing <kbd>return</kbd>.</p>
+                <pre>
+    yxnill@codejamn:~$ <kbd>man ls</kbd>
+    <samp>LS(1)
+
+    NAME
+           ls - list directory contents
+
+    SYNOPSIS
+           ls [OPTION]... [FILE]...
+
+    DESCRIPTION
+           List information about the FILEs (the current directory by default).  Sort entries alphabetically if...
+
+           Mandatory arguments to long options are mandatory for short options too.
+
+           -a, --all
+                  do not ignore entries starting with .
+
+           -A, --almost-all
+                  do not list implied . and ..
+
+           --author
+                  with -l, print the author of each file
+
+           -b, --escape
+                  print C-style escapes for nongraphic characters
+    ...</samp></pre>
                 <h3>Web-Searching</h3>
                 <p>As already mentioned above, there is absolutely no shame in using web-searches if a command is not
                     known,
