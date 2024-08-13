@@ -6,10 +6,10 @@
     /****************
      * color-config *
      ****************/
-    --first-color: #ffe7f4;
-    --second-color: #c3a2cb;
-    --third-color: #796f9d;
-    --fourth-color: #41566e;
+    --first-color: #ce99c7;
+    --second-color: #9c75ab;
+    --third-color: #60598f;
+    --fourth-color: #2c3656;
 
     /********************
      * container-config *
@@ -45,7 +45,7 @@ body
     position: relative;
 
     border-style: solid;
-    border-color: black;
+    border-color: var(--fourth-color);
     border-left-width: 10vh;
     border-right-width: 10vh;
 }
@@ -67,6 +67,7 @@ body::before
 main
 {
     overflow-y: auto;
+    overflow-x: hidden;
     position: absolute;
     top: 0;
     left: 10%;
@@ -96,7 +97,7 @@ main
 h1, h2, h3, h4, h5, h6
 {
     color: var(--fourth-color);
-    text-shadow: 0 0 1em var(--third-color);
+    text-shadow: 0 0 0.5em var(--fourth-color);
 }
 
 h3, h4, h5, h6
@@ -125,12 +126,32 @@ p, li
     color: var(--third-color);
 }
 
+code, kbd, samp, var, pre
+{
+    background-color: white;
+}
+
+samp
+{
+    color: var(--fourth-color);
+}
+
+pre
+{
+    color: var(--third-color);
+}
+
+kbd
+{
+    color: var(--second-color);
+}
+
 p::before
 {
     content: "yxnill@codejam:~$ ";
     font-weight: bold;
-    color: var(--third-color);
-    text-shadow: 0 0 1em var(--second-color);
+    color: var(--second-color);
+    text-shadow: 0 0 0.5em var(--second-color);
 }
 
 /**********
