@@ -83,6 +83,13 @@ main
 
 }
 
+.image-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
 /*********
  * texts *
  *********/
@@ -133,6 +140,10 @@ img
 {
     padding: 5px;
     margin: 3px;
+
     border-style: dashed;
     border-color: var(--second-color);
+
+    max-height: 300px;
+    object-fit: contain;
 }
