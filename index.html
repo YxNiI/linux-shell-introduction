@@ -143,8 +143,7 @@
             <div class="chapter">
                 <h2>Getting Help</h2>
                 <p>While exploring the shell, it is more important to know how to gather unknown information about the
-                    shell,
-                    than knowing how to use the shell 100% of the time.</p>
+                    shell, rather than knowing how to use the shell 100% of the time.</p>
                 <p>What this means is, it is important to know how to use the shell's help-system and external sources,
                     like
                     web-searches.</p>
@@ -152,15 +151,56 @@
                     the
                     shell,
                     this is not how it works.</p>
-                <h3>-h and --help</h3>
+                <h3>-h, --help and options</h3>
                 <p>Nearly every shell-command has a so called: "option", called: "-h" and/or: "--help".</p>
                 <p>If it is typed in like this: "[command] --help", the shell is going to display a printout of the
                     usage,
                     description and most important options of the command.</p>
                 <p>(Options are modifiers of a command's functionality, which are initiated by typing them after the
-                    name of
-                    the
-                    command, like described above with the help-option.)</p>
+                    name of the command, like described above with the help-option.)</p>
+                <p>Here is an example:</p>
+                <pre>
+    yxnill@codejam:~$ <kbd>ls --help</kbd>
+    <samp>Usage: ls [OPTION]... [FILE]...
+    List information about the FILEs (the current directory by default).
+    Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+    Mandatory arguments to long options are mandatory for short options too.
+    -a, --all                  do not ignore entries starting with .
+    -A, --almost-all           do not list implied . and ..
+    --author               with -l, print the author of each file
+    -b, --escape               print C-style escapes for nongraphic characters
+    --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+    e.g., '--block-size=M'; see SIZE format below
+    -B, --ignore-backups       do not list implied entries ending with ~
+    ...</samp></pre>
+                <p>There are many more options only for ls, which are not listed above: but here is a helpful example of
+                    using options:</p>
+                <pre>
+    yxnill@codejam:~$ <kbd>ls -hla</kbd>
+    <samp>total 48K
+    drwxrwxr-x  5 yxnill yxnill 4,0K Aug 13 18:40 .
+    drwxrwxr-x 13 yxnill yxnill 4,0K Aug 11 18:35 ..
+    drwxrwxr-x  8 yxnill yxnill 4,0K Aug 13 15:32 .profile
+    -rw-rw-r--  1 yxnill yxnill   10 Aug 11 19:50 .bashrc
+    drwxrwxr-x  2 yxnill yxnill 4,0K Aug 13 18:36 .super_secret_stuff_ssshhhh
+    drwxrwxr-x  2 yxnill yxnill 4,0K Aug 13 05:40 projects
+    -rw-rw-r--  1 yxnill yxnill 2,7K Aug 13 15:25 scripts
+    -rw-rw-r--  1 yxnill yxnill  14K Aug 13 18:40 secret_stuff_ssshhhh</samp></pre>
+                <p>These options also show hidden files and directories, through the <kbd>-a</kbd>-option, which stands
+                    for:
+                    "all",
+                    show a long description about all files and directories, by using the <kbd>-l</kbd>-option, which
+                    stands for:
+                    "long"
+                    and make the size of the files and directories human-readable, by using the <kbd>-h</kbd>-option,
+                    which stands
+                    for: "human-readable".</p>
+                <p>In the example above, all options are also combined, so they are written as: <kbd>-hla</kbd>, which
+                    is a common technique for the shorthand versions of any option (although not every option provides
+                    this usage, as some options require for example: arguments of their own.)</p>
+                <p>The longhand options don't provide this technique, but are a bit more readable, they are also listed in the <kbd>--help</kbd>-printouts.</p>
+                <p>For example: the longhand for the <kbd>-a</kbd>-option is: <kbd>--all</kbd>.</p>
                 <h3>man</h3>
                 <p>"man" unlike: "-h" and "--help" is its own command and takes a name of another command as an argument
                     (like
