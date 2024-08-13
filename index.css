@@ -140,6 +140,7 @@ samp
 pre
 {
     padding: 3px;
+    overflow: auto;
     margin: 5px 0 5px 0;
     color: var(--third-color);
     background-color: white;
