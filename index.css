@@ -31,7 +31,7 @@
 ::selection
 {
     color: var(--first-color);
-    background-color: var(--second-color);
+    background-color: var(--fourth-color);
 }
 
 /**************
@@ -175,7 +175,7 @@ p::before
     content: "yxnill@codejam:~$ ";
     font-weight: bold;
     color: var(--second-color);
-    text-shadow: 0 0 0.5em var(--second-color);
+    text-shadow: 0 0 0.5em var(--first-color);
 }
 
 /**********
