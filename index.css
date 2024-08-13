@@ -145,6 +145,11 @@ pre
 pre::after
 {
     content: " ▉";
+    animation: none;
+}
+
+pre.animate::after
+{
     animation: blink 3s infinite;
 }
 
