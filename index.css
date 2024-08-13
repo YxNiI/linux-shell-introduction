@@ -139,6 +139,7 @@ samp
 pre
 {
     color: var(--third-color);
+    padding: 3px;
 }
 
 kbd
