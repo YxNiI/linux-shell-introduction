@@ -142,6 +142,20 @@ pre
     padding: 3px;
 }
 
+pre::after
+{
+    content: " ▉";
+    animation: blink 3s infinite;
+}
+
+@keyframes blink
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
 kbd
 {
     color: var(--second-color);

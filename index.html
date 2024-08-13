@@ -70,7 +70,8 @@
                 <p>Before every command which can be typed in at the position of the caret, is a prefix in the following
                     format:
                 </p>
-                <pre>   "[user]@[computer-name]:[path]$".</pre>
+                <pre>
+    "[user]@[computer-name]:[path]$"</pre>
                 <p>This is so, because it is possible to change the logged-in user inside the terminal-emulator, while
                     the same user remains logged in, in the gui of the desktop-environment; it is also possible to
                     access other machines via tools like: "ssh" and therefore the computer-name would change according
@@ -84,11 +85,11 @@
                     also going to serve as examples for further explanations.</p>
                 <h4>ls</h4>
                 <p><kbd>ls</kbd> stands for: "list".</p>
-                <p>It is used in the following way: <kbd>ls</kbd>.</p>
-                <p>Example-output:</p>
+                <p>It is used in the following way:</p>
                 <pre>
     yxnill@codejam:~$ <kbd>ls</kbd>
-    <samp>projects scripts secret_stuff_ssshhhh</samp></pre>
+    <samp>projects scripts secret_stuff_ssshhhh</samp>
+    yxnill@codejam:~$</pre>
                 <p>In other words, it can just be typed in the command-line, and after pressing return, it is going to
                     list
                     all
@@ -100,8 +101,8 @@
                     are
                     available for reading, editing or executing.</p>
                 <h4>pwd</h4>
-                <p>"pwd" stands for: "print working directory".</p>
-                <p>It is used in the following way: "pwd"</p>
+                <p><kbd>pwd</kbd> stands for: "print working directory".</p>
+                <p>It is used in the following way:</p>
                 <pre>
     yxnill@codejam:~$ <kbd>pwd</kbd>
     <samp>/home/yxnill</samp></pre>
@@ -110,16 +111,32 @@
                 <p>This command may be used to navigate the directory-hierarchy, by being able to know where the current
                     working directory is positioned.</p>
                 <h4>cd</h4>
-                <p>"cd" stands for: "change directory".</p>
-                <p>It is used in the following way: "cd [dirname]."</p>
-                <p>So typing: "ls", is going to list all the non-hidden directories and then these can be traversed by
-                    using:
-                    "cd [dirname]".</p>
-                <p>(Typing: "cd .." results in going back in the directory-hierarchy.)</p>
-                <p>(A single dot represents the current working directory.)</p>
-                <p>(Tilde represents the home-directory: "cd ~".)</p>
-                <p>Therefore, it can be used to do the actual navigating.</p>
-                <p>Multiple directories can be traversed at once in the following way: "cd ./[dirname]/[dirname]".</p>
+                <p><kbd>cd</kbd> stands for: "change directory".</p>
+                <p>It is used in the following way:</p>
+                <pre>
+    yxnill@codejam:~/projects$ <kbd>cd [dirname]</kbd></pre>
+                <br>
+                <pre>
+    yxnill@codejam:~$ <kbd>ls</kbd>
+    <samp>projects scripts secret_stuff_ssshhhh</samp>
+    yxnill@codejam:~$ <kbd>cd projects</kbd>
+    yxnill@codejam:~/projects$</pre>
+                <p>So typing: <kbd>ls</kbd>, is going to list all the non-hidden directories and then these can be
+                    traversed by using:</p>
+                <p>Typing: <kbd>cd ..</kbd> results in going back in the directory-hierarchy.</p>
+                <pre>
+    yxnill@codejam:~/projects$ <kbd>cd ..</kbd>
+    yxnill@codejam:~$</pre>
+                <p>A single dot represents the current working directory.</p>
+                <p>Tilde represents the home-directory.</p>
+                <p>Multiple directories can be traversed at once in the following way:</p>
+                <pre>
+    yxnill@codejam:~$ <kbd>cd ./[dirname]/[dirname]</kbd></pre>
+                <br>
+                <pre>
+    yxnill@codejam:~$ <kbd>cd ./projects/linux_shell_introduction</kbd>
+    yxnill@codejam:~/projects/linux_shell_introduction$ <kbd>cd ~</kbd>
+    yxnill@codejam:~$</pre>
             </div>
             <div class="chapter">
                 <h2>Getting Help</h2>
