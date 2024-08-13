@@ -126,7 +126,7 @@ p, li
     color: var(--third-color);
 }
 
-code, kbd, samp, var, pre
+pre
 {
     background-color: white;
 }
@@ -139,6 +139,7 @@ samp
 pre
 {
     color: var(--third-color);
+    margin: 5px 0 5px 0;
     padding: 3px;
 }
 
