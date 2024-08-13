@@ -111,6 +111,12 @@ h1
     margin: 5px 0 5px 0;
 }
 
+#closing-word
+{
+    margin: 5px 0 15px 0;
+    text-decoration: underline;
+}
+
 h2
 {
     margin-bottom: 5px;
@@ -126,11 +132,6 @@ p, li
     color: var(--third-color);
 }
 
-pre
-{
-    background-color: white;
-}
-
 samp
 {
     color: var(--fourth-color);
@@ -138,9 +139,10 @@ samp
 
 pre
 {
-    color: var(--third-color);
-    margin: 5px 0 5px 0;
     padding: 3px;
+    margin: 5px 0 5px 0;
+    color: var(--third-color);
+    background-color: white;
 }
 
 pre::after
