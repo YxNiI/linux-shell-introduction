@@ -8,8 +8,8 @@ document.querySelector("main").addEventListener("scroll", function()
                                                  const caretRectCenter = caretRect.top + caretRect.height / 2;
                                                  const viewportCenter = window.innerHeight / 2;
 
-                                                 if ((caretRectCenter >= viewportCenter - 100 && caretRectCenter
-                                                      <= viewportCenter + 100))
+                                                 if (caretRectCenter >= viewportCenter - 100 && caretRectCenter
+                                                      <= viewportCenter + 100)
                                                  {
                                                      caret.classList.add("animate");
                                                  }
