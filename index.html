@@ -77,7 +77,7 @@
                 <pre>
     "[user]@[computer-name]:[path]$"</pre>
                 <p>This is so, because it is possible to change the logged-in user inside the terminal-emulator, while
-                    the same user remains logged in, in the gui of the desktop-environment; it is also possible to
+                    the same user remains logged in inside the gui of the desktop-environment; it is also possible to
                     access other machines via tools like: "ssh" and therefore the computer-name would change according
                     to that.</p>
                 <p>And lastly the "path"-part shows the current working directory, from the root, or the home-directory
@@ -125,9 +125,9 @@
     <samp>projects scripts secret_stuff_ssshhhh</samp>
     yxnill@codejam:~$ <kbd>cd projects</kbd>
     yxnill@codejam:~/projects$</pre>
-                <p>So typing: <kbd>ls</kbd>, is going to list all the non-hidden directories and then these can be
-                    traversed by using:</p>
-                <p>Typing: <kbd>cd ..</kbd> results in going back in the directory-hierarchy.</p>
+                <p>So typing: "<kbd>ls</kbd>", is going to list all the non-hidden directories and then these can be
+                    traversed by using: "<kbd>cd</kbd>".</p>
+                <p>Typing: "<kbd>cd ..</kbd>" results in going back in the directory-hierarchy.</p>
                 <pre>
     yxnill@codejam:~/projects$ <kbd>cd ..</kbd>
     yxnill@codejam:~$</pre>
@@ -146,20 +146,25 @@
                 <h2>Getting Help</h2>
                 <p>While exploring the shell, it is more important to know how to gather unknown information about the
                     shell, rather than knowing how to use the shell 100% of the time.</p>
-                <p>What this means is, it is important to know how to use the shell's help-system and external sources,
-                    like
-                    web-searches.</p>
+                <p>What this means is: it is important to know how to use the shell's help-system and external sources,
+                    like web-searches.</p>
                 <p>It would be wrong to think memorizing all the commands and remembering them at all time is how to use
-                    the
-                    shell,
-                    this is not how it works.</p>
+                    the shell, this is not how it works.</p>
+                <p>Of course, it is not going to be difficult remembering often used commands and options, but when
+                    familiarization with the shell's help-system and how to create effective web search-queries
+                    concerning the shell has been established, the potential for using the shell in an autonomous, quick
+                    and precise manner greatly increases.</p>
                 <h3>-h, --help and options</h3>
-                <p>Nearly every shell-command has a so called: "option", called: "-h" and/or: "--help".</p>
-                <p>If it is typed in like this: "[command] --help", the shell is going to display a printout of the
+                <p>Nearly every shell-command has a so called: "option", called: "<kbd>-h</kbd>" and/or:
+                    "<kbd>--help</kbd>".</p>
+                <p>If it is typed in like this:</p>
+                <pre>
+    yxnill@codejam:~$ <kbd>[command] --help</kbd></pre>
+                <p>the shell is going to display a printout of the
                     usage,
                     description and most important options of the command.</p>
-                <p>(Options are modifiers of a command's functionality, which are initiated by typing them after the
-                    name of the command, like described above with the help-option.)</p>
+                <p>(Options are modifiers of a command's functionality, which are usually initiated by typing them after
+                    the name of the command, like described above with the help-option.)</p>
                 <p>Here is an example:</p>
                 <pre>
     yxnill@codejam:~$ <kbd>ls --help</kbd>
@@ -189,31 +194,32 @@
     drwxrwxr-x  2 yxnill yxnill 4,0K Aug 13 05:40 projects
     -rw-rw-r--  1 yxnill yxnill 2,7K Aug 13 15:25 scripts
     -rw-rw-r--  1 yxnill yxnill  14K Aug 13 18:40 secret_stuff_ssshhhh</samp></pre>
-                <p>These options also show hidden files and directories, through the <kbd>-a</kbd>-option, which stands
-                    for:
-                    "all",
-                    show a long description about all files and directories, by using the <kbd>-l</kbd>-option, which
+                <p>These options also show hidden files and directories, through the "<kbd>-a</kbd>"-option, which
+                    stands
+                    for: "all",
+                    show a long description about all files and directories, by using the "<kbd>-l</kbd>"-option, which
                     stands for:
                     "long"
-                    and make the size of the files and directories human-readable, by using the <kbd>-h</kbd>-option,
+                    and make the size of the files and directories human-readable, by using the "<kbd>-h</kbd>"-option,
                     which stands
                     for: "human-readable".</p>
                 <p>In the example above, all options are also combined, so they are written as: <kbd>-hla</kbd>, which
                     is a common technique for the shorthand versions of any option (although not every option provides
-                    this usage, as some options require for example: arguments of their own.)</p>
+                    this usage, as some options require for example: arguments of their own).</p>
                 <p>The longhand options don't provide this technique, but are a bit more readable, they are also listed
                     in the <kbd>--help</kbd>-printouts.</p>
-                <p>For example: the longhand for the <kbd>-a</kbd>-option is: <kbd>--all</kbd>.</p>
+                <p>For example: the longhand for the "<kbd>-a</kbd>"-option is: "<kbd>--all</kbd>".</p>
                 <h3>man</h3>
-                <p><kbd>man</kbd> unlike: <kbd>-h</kbd> and <kbd>--help</kbd> is its own command and takes a name of
+                <p><kbd>man</kbd> unlike: "<kbd>-h</kbd>" and: "<kbd>--help</kbd>" is its own command and takes a name
+                    of
                     another command as an argument
                     (like <kbd>cd</kbd> takes a directory-name as an argument), in order to display a detailed man-page.
                 </p>
                 <p>This man-page is displayed in a separate terminal-view and allows scrolling through it with the
                     arrow-keys.</p>
-                <p>This view can be left by pressing the: <kbd>q</kbd>-key.</p>
-                <p>Search-queries can be entered by typing: <kbd>/</kbd>, then typing in the word information is needed
-                    for and lastly pressing <kbd>return</kbd>.</p>
+                <p>This view can be left by pressing the: "<kbd>q</kbd>"-key.</p>
+                <p>Search-queries can be entered by typing: "<kbd>/</kbd>", then typing in the word information is
+                    needed for and lastly pressing "<kbd>return</kbd>".</p>
                 <pre>
     yxnill@codejamn:~$ <kbd>man ls</kbd>
     <samp>LS(1)                                                                                                User Commands                                                                                               LS(1)
@@ -245,15 +251,16 @@
                 <h3>Web-Searching</h3>
                 <p>As already mentioned above, there is absolutely no shame in using web-searches if a command is not
                     known,
-                    or even if the: <kbd>--help</kbd>- or man-page-printouts of a command don't seem completely
-                    decipherable.</p>
-                <p>Even people who use the linux-shell a lot don't know all commands and/or all their options.</p>
+                    or even if the: "<kbd>--help</kbd>"-option or man-page-printouts of a command don't seem completely
+                    decipherable (which is going to change the more you get used to using the shell's help-system).</p>
+                <p>Even people who use the linux-shell a lot don't know all commands and/or all their options, or how to
+                    combine them.</p>
                 <p>So if, after reading this introduction, there would be a situation where (for example) a file, or a
                     directory needs
                     to be created; it would be a valid solution to use a search-query, like the following in a
                     search-engine of trust: "linux shell create file" or "linux shell create directory".</p>
-                <p>Which would then lead to websites which are probably going to show that the: <kbd>touch</kbd>-command
-                    is going to do the trick here for files and the <kbd>mkdir</kbd>-command for directories.</p>
+                <p>Which would then lead to websites which are probably going to show that the: "<kbd>touch</kbd>"-command
+                    is going to do the trick here for files and the "<kbd>mkdir</kbd>"-command for directories.</p>
             </div>
             <div class="chapter">
                 <h2>Conclusion</h2>
@@ -267,20 +274,26 @@
                 <p>These basics give a good elemental understanding to build on, because information on how
                     to navigate the shell, and about how to use it's help-system (if a new functionality needs to be
                     learned) are going to translate into an autonomous ability to improve shell related user-skills.</p>
-                <p>Lastly, here are some suggestions for further reading, about topics which are going to build on the
+                <p>Lastly, here are some suggestions for further reading about topics which are going to build on the
                     information just conveyed here:</p>
                 <ul>
-                    <li>Read about and try out the <kbd><span data-tooptip>nano</span></kbd>-console-text-editor.</li>
-                    <li>Read about what a package-manager is and if <kbd>nano</kbd> isn't installed yet, install the
-                        <kbd>nano</kbd>-console-text-editor, with the package-manager.
+                    <li>Read about and try out the: "<kbd><span data-tooptip>nano</span></kbd>"-console-text-editor.
                     </li>
-                    <li>Read about what <kbd>sh</kbd> and <kbd>bash</kbd> is and why both are different kinds of shells,
+                    <li>Read about what a package-manager is and if <kbd>nano</kbd> isn't installed yet, install the
+                        "<kbd>nano</kbd>"-console-text-editor, with the package-manager.
+                    </li>
+                    <li>Read about what: "<kbd>sh</kbd>" and: "<kbd>bash</kbd>" are and why both are different kinds of
+                        shells,
                         which can be
                         used.
                     </li>
                     <li>Read about how the <kbd>tab</kbd>-key interacts with the terminal and how it can make its usage
                         it much
                         faster.
+                    </li>
+                    <li>
+                        Read about how you can combine the outputs of multiple commands, by using: "piping"- or
+                        "pipeline"-operators.
                     </li>
                 </ul>
             </div>
