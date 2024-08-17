@@ -68,24 +68,34 @@ main
 {
     overflow-y: auto;
     overflow-x: hidden;
+
     position: absolute;
     top: 0;
     left: 10%;
     right: 10%;
     bottom: 0;
+
+    padding: 5px 0 5px 0;
 }
 
 .chapter
 {
-    padding: 5px 20px 20px 20px;
+    padding: 5px 20px 5px 20px;
     margin-bottom: 20px;
     border-style: dashed;
     border-color: var(--third-color);
 
 }
 
+.chapter:last-of-type
+{
+    margin-bottom: 10px;
+}
+
 .image-row
 {
+    margin: 5px 0 5px 0;
+
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -94,32 +104,26 @@ main
 /*********
  * texts *
  *********/
-h1, h2, h3, h4, h5, h6
+#headline
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1, h2, h3, h4
 {
     color: var(--fourth-color);
     text-shadow: 0 0 0.5em var(--fourth-color);
 }
 
-h3, h4, h5, h6
-{
-    margin-top: 5px;
-}
-
-h1
-{
-    text-align: center;
-    margin: 5px 0 5px 0;
-}
-
-#closing-word
-{
-    margin: 5px 0 15px 0;
-    text-decoration: underline;
-}
-
 h2
 {
     margin-bottom: 5px;
+}
+
+h3, h4
+{
+    margin-top: 5px;
 }
 
 ol, ul
@@ -148,7 +152,7 @@ pre
 
 pre::after
 {
-    content: " ▉";
+    content: " \2588";
     animation: none;
 }
 
@@ -170,7 +174,7 @@ kbd
     color: var(--second-color);
 }
 
-p::before
+.chapter p::before
 {
     content: "yxnill@codejam:~$ ";
     font-weight: bold;
@@ -181,7 +185,7 @@ p::before
 /**********
  * images *
  **********/
-img
+.chapter img
 {
     padding: 5px;
     margin: 3px;
